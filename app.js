@@ -53,9 +53,9 @@ app.set('view engine', 'ejs');
 // body-parser hacer parsing, leer archivos
 
 app.use(bodyParser.json()); //peticiones de formato json
-app.use(bodyParser.urlencoded({extended: false})); // formulario de html
-app.use(morgan('dev'));
-
+app.use(bodyParser.urlencoded({extended: false})); // entender datos desde formulario de html
+app.use(morgan('common'));
+app.use(express.json());
 
 
 //Routes

@@ -1,3 +1,8 @@
+body {
+    background-image: url("https://img.freepik.com/foto-gratis/fondo-textura-papel-arrugado-negro-oscuro-cerca_99266-420.jpg?size=626&ext=jpg");
+    
+}
+
 .img {
     display: block;
     width: 100%;
@@ -41,16 +46,38 @@
         width: 80%;
         height: auto;
       }
+    .redes-sociales {
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .fab {
+        box-sizing: auto;
+        height: 100%;
+    }
   }
 
 
-  @media (max-width: 480px) {
-    #logojagger {
-        position: absolute;
-        max-width: 70px;
-        height: auto;
-        bottom: 23px;
-    }
+
+    @media only screen and (max-width: 480px) {
+        .navbar {
+            display: inline;
+        }
+        .redes-sociales {
+            display: none !important;
+         }
+         #logojagger {
+             max-width: 60px;
+             
+         }
+         .logo {
+             position: absolute;
+             margin-right: 5px;
+             margin-left: 40%;
+             margin-bottom: 10%;
+         }
+       }
+
     .logo {
         position: absolute;
         right: 45%;
@@ -63,7 +90,7 @@
         width: 60%;
         height: auto;
       }
-  }
+
 
   .titulos {
       position: absolute;
@@ -72,9 +99,31 @@
       top: 7%;
   }
 
+  .fab {
+      display: inline;
+      margin: 10px 8px 10px 8px;
+      color: rgb(48, 46, 46);
+      opacity: 0.8;
+  }
+
+  .fab:hover {
+      opacity: 1;
+  }
+
+  .redes-sociales {
+        margin-right: 20px;
+  }
+
   .carousel-inner {
       max-height: 550px;
   }
+
+  .enlaces {
+      text-align: left;
+      position: relative;
+  }
+
+
 
   .carousel-item {
       position: relative;
