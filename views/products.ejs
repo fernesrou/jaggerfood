@@ -1,0 +1,31 @@
+<%-include('partials/header')%>
+
+
+<table class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%for(var i = 0; i < items.length; i++) {
+                %> <p>
+                <%= items[i].name %>
+                </p>
+                <% } %>
+            </td>
+            <td><%for(var i = 0; i < items.length; i++) {
+                %> <p>
+                <%= items[i].mail %>
+                </p>
+                <% } %>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+<%-include('partials/footer')%>
+</html>

@@ -4,7 +4,8 @@
   "description": "es una prueba",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,9 +16,14 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "color": "^3.1.2",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "font-awesome": "^4.7.0",
     "morgan": "^1.9.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
