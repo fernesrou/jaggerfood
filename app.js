@@ -28,10 +28,16 @@ const route = require('./routes/index');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const dotenv = require('dotenv');
+const session = require('express-session');
+const gsap = require('gsap');
+//const flash = require('connect-flash');
 
-
+//Initializations
 
 const app = express();
+//require('./database');
+
+
 
 //Settings
 // ('nombrevariable', 'valorvariable')
@@ -56,7 +62,13 @@ app.use(bodyParser.json()); //peticiones de formato json
 app.use(bodyParser.urlencoded({extended: false})); // entender datos desde formulario de html
 app.use(morgan('common'));
 app.use(express.json());
+app.use(session({
+    secret: 'appjagger',
+    resave: true,
+    saveUninitialized: true
+}));
 
+//app.use(flash());
 
 //Routes
 

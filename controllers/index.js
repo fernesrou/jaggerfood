@@ -27,15 +27,20 @@ const nuevoproducto = (req, res, next) => {
         name: newItem,
         mail: req.body.email
     });
-    res.redirect('/login');
+    res.redirect('/products');
     console.log(items);
     next();
 }
+
+const game = (req, res) => {
+    res.render('/snake', {
+        titulo: 'Game'
+    })};
 
 module.exports = {
     index: index,
     login: login,
     productos: productos,
-    nuevoproducto: nuevoproducto
-}
-
+    nuevoproducto: nuevoproducto,
+    game: game
+};

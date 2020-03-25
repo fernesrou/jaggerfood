@@ -1,10 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-
-
-
 const indexController = require('../controllers/index');
+
 
 router.get('/', indexController.index);
 
@@ -17,5 +15,8 @@ router.get('/products', indexController.productos);
 
 
 router.post('/newproduct', indexController.nuevoproducto);
+
+router.get('/game', indexController.game);
+
 
 module.exports = router;
